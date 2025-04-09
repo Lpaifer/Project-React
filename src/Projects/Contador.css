@@ -1,0 +1,71 @@
+.contador-container {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #e8f5e9;
+    border: 2px solid #0212bd;
+    border-radius: 12px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contador-container h2 {
+    color: #003aaf;
+    margin-bottom: 20px;
+  }
+  
+  .contador-display {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #005cc5;
+    margin: 20px 0;
+  }
+  
+  .contador-botoes {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .contador-botoes button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .contador-botoes button:first-child {
+    background-color: #001dd8;
+    color: white;
+  }
+  
+  .contador-botoes button:first-child:hover {
+    background-color: #1100fa;
+  }
+  
+  .contador-botoes button:last-child {
+    background-color: #ef5350;
+    color: white;
+  }
+  
+  .contador-botoes button:last-child:hover {
+    background-color: #c62828;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 480px) {
+    .contador-display {
+      font-size: 3rem;
+    }
+  
+    .contador-botoes button {
+      flex: 1 1 100%;
+      margin-top: 10px;
+    }
+  }
+  

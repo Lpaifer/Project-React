@@ -1,0 +1,79 @@
+.calculadora-container {
+    max-width: 320px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #e3f2fd;
+    border: 2px solid #64b5f6;
+    border-radius: 12px;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  .calculadora-container h2 {
+    color: #1565c0;
+    margin-bottom: 20px;
+  }
+  
+  .display {
+    width: 100%;
+    height: 60px;
+    font-size: 2rem;
+    text-align: right;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #212121;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.1);
+  }
+  
+  .botoes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+  }
+  
+  .botoes button {
+    padding: 18px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #bbdefb;
+    color: #0d47a1;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s ease;
+  }
+  
+  .botoes button:hover {
+    background-color: #90caf9;
+  }
+  
+  .botoes .limpar {
+    background-color: #ef5350;
+    color: white;
+  }
+  
+  .botoes .limpar:hover {
+    background-color: #c62828;
+  }
+  
+  .botoes .igual {
+    grid-column: span 2;
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .botoes .igual:hover {
+    background-color: #388e3c;
+  }
+  
+  @media (max-width: 400px) {
+    .botoes button {
+      padding: 16px;
+      font-size: 1rem;
+    }
+  }
+  
